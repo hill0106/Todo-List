@@ -1,0 +1,456 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?cs=srgb&dl=pexels-pixabay-531767.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header h1, body header i {
+  color: white;
+  font-weight: 900;
+  font-size: 60px;
+  margin-top: 2rem;
+}
+
+body main .New {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+body main .New .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50px;
+}
+
+body main .New .title .task {
+  color: #FDE17C;
+  font-weight: 600;
+  padding-right: 80px;
+}
+
+body main .New .title .date {
+  color: #FDE17C;
+  font-weight: 600;
+  margin-right: 260px;
+}
+
+body main .New .f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Firefox */
+}
+
+body main .New .f .taskInput {
+  background-color: #B4D5F1;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 10px;
+  width: 13vw;
+  height: 5vw;
+  color: #073771;
+  margin-right: 3rem;
+  padding: 0.5rem;
+}
+
+body main .New .f .monthInput {
+  margin-right: 1rem;
+}
+
+body main .New .f .monthInput, body main .New .f .dayInput {
+  background-color: #B4D5F1;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 10px;
+  width: 5vw;
+  height: 3vw;
+  color: #073771;
+  text-align: justify;
+  padding: 0.5rem;
+}
+
+body main .New .f input::-webkit-outer-spin-button,
+body main .New .f input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body main .New .f input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body main .New .f .add {
+  background: -webkit-gradient(linear, left top, left bottom, from(#A7B4E3), color-stop(#e9eff4), to(white));
+  background: linear-gradient(#A7B4E3, #e9eff4, white);
+  border-radius: 20px;
+  border: none;
+  width: 7vw;
+  height: 30px;
+  color: #073771;
+  font-weight: 600;
+  font-size: large;
+  margin-top: 2rem;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+body main .sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .sort .div {
+  background-color: #B4D5F1;
+  height: 0.1rem;
+  width: 20vw;
+  margin-top: 1rem;
+}
+
+body main .sort .sortby {
+  background: -webkit-gradient(linear, left top, left bottom, from(#A7B4E3), color-stop(#e9eff4), to(white));
+  background: linear-gradient(#A7B4E3, #e9eff4, white);
+  border-radius: 20px;
+  border: none;
+  width: 200px;
+  height: 30px;
+  color: #073771;
+  font-weight: 600;
+  font-size: large;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+body main .sort .todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50vw;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  margin-bottom: 0.05rem;
+}
+
+body main .sort .todo p {
+  color: #073771;
+  padding: 0.25rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: #CFE6FA;
+}
+
+body main .sort .todo .todo-time {
+  width: 18%;
+  margin-right: 2rem;
+}
+
+body main .sort .todo .todo-text {
+  width: 50%;
+}
+
+body main .sort .todo .complete, body main .sort .todo .trash {
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+body main .sort .todo .trash {
+  color: #073771;
+}
+
+body main .sort .todo .complete .fa-regular {
+  color: #A7B4E3;
+}
+
+body main .sort .todo .done-button .fa-regular {
+  color: #073771;
+  font-weight: bold;
+}
+
+body main .sort .done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.1rem;
+}
+
+h1, h2, h3, h4, h5, button {
+  font-family: 'Roboto Mono', monospace;
+}
+
+i {
+  pointer-events: none;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  body header h1, body header i {
+    font-size: 6vw;
+  }
+  body main .New .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0px;
+  }
+  body main .New .title .task {
+    color: #FDE17C;
+    font-weight: 600;
+    padding-right: 0px;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  body main .New .title .date {
+    color: #FDE17C;
+    font-weight: 600;
+    margin-right: 0px;
+  }
+  body main .New .f {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .New .f .taskInput {
+    background-color: #B4D5F1;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    width: 20vw;
+    height: 8vw;
+    color: #073771;
+    margin-left: 1rem;
+    padding: 0.5rem;
+  }
+  body main .New .f .monthInput {
+    margin-right: 0.5rem;
+  }
+  body main .New .f .monthInput, body main .New .f .dayInput {
+    background-color: #B4D5F1;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    width: 10vw;
+    height: 5vw;
+    -webkit-transform: translateX(-15%);
+            transform: translateX(-15%);
+    color: #073771;
+    text-align: justify;
+    padding: 0.5rem;
+  }
+  body main .New .f .add {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body header h1, body header i {
+    font-size: 6vw;
+  }
+  body main .New .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0px;
+  }
+  body main .New .title .task {
+    color: #FDE17C;
+    font-weight: 600;
+    padding-right: 0px;
+    -webkit-transform: translateX(-80%);
+            transform: translateX(-80%);
+  }
+  body main .New .title .date {
+    color: #FDE17C;
+    font-weight: 600;
+    margin-right: 0px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body header h1, body header i {
+    font-size: 10vw;
+  }
+  body main .New .title .task {
+    color: #FDE17C;
+    font-weight: 600;
+    font-size: medium;
+    -webkit-transform: translateX(-90%);
+            transform: translateX(-90%);
+  }
+  body main .New .title .date {
+    color: #FDE17C;
+    font-weight: 600;
+    font-size: medium;
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  body main .New .f {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .New .f .taskInput {
+    background-color: #B4D5F1;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    width: 35vw;
+    height: 10vw;
+    color: #073771;
+    padding: 0.5rem;
+  }
+  body main .New .f .monthInput {
+    margin-right: 1rem;
+  }
+  body main .New .f .monthInput, body main .New .f .dayInput {
+    background-color: #B4D5F1;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    width: 20vw;
+    height: 7vw;
+    color: #073771;
+    text-align: justify;
+    padding: 0.5rem;
+  }
+  body main .New .f .add {
+    width: 20vw;
+    height: 30px;
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+  }
+  body main .sort .div {
+    width: 50vw;
+  }
+  body main .sort .todo {
+    width: 90vw;
+  }
+  body main .sort .todo .trash, body main .sort .todo .complete {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body header h1, body header i {
+    font-size: 10vw;
+  }
+  body main .New .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .New .title .task {
+    font-size: 4vw;
+  }
+  body main .New .title .date {
+    font-size: 4vw;
+  }
+  body main .sort .todo .todo-time {
+    width: 20%;
+    margin-right: 2rem;
+  }
+  body main .sort .todo .todo-text {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

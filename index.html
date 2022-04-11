@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do List</title>
+    <title>To-do IT</title>
     <meta name="author" content="Trinity Chiu" />
     <meta name="robots" content="index,follow" />
     <meta name="rating" content="General" />
@@ -24,31 +24,32 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <header>
-        <h1><i class="fa-solid  fa-xs fa-list-check"></i> To-do List</h1>
-    </header>
-    <main>
-        <section class="New">
-            <div class="title">
-                <h3 class="task"><i class="fa-solid fa-plus"></i> New Task</h3>
-                <h3 class="date"><i class="fa-solid fa-xs fa-calendar-days"></i> Date</h3>
-            </div>
-            <div class="f">
-                <form>
-                    <input class="taskInput" type="text">
-                    <input class="monthInput" type="number" max="12" min="1" placeholder="Month" required>
-                    <input class="dayInput" type="number" max="31" min="1" placeholder="Day" required>
-                    <button type="submit" class="add"><i class="fa-solid fa-check"></i> Add</button>
-                </form>
-            </div>
-            
-        </section>
-        <section class="sort">
-            
-            <div class="div"></div>
-            <button class="sortby"><i class="fa-solid fa-clock"></i> Sort By Time</button>
-        </section>
-    </main>
+    <div class="background">
+        <header>
+            <h1><i class="fa-solid  fa-xs fa-list-check"></i> To-do IT</h1>
+        </header>
+        <main>
+            <section class="New">
+                <div class="title">
+                    <h3 class="task"><i class="fa-solid fa-plus"></i> New Task</h3>
+                    <h3 class="date"><i class="fa-solid fa-xs fa-calendar-days"></i> Date</h3>
+                </div>
+                <div class="f">
+                    <form>
+                        <input class="taskInput" type="text" placeholder="What's your task?">
+                        <input class="monthInput" type="number" max="12" min="1" placeholder="Month" required>
+                        <input class="dayInput" type="number" max="31" min="1" placeholder="Day" required>
+                        <button type="submit" class="add"><i class="fa-solid fa-check"></i> Add</button>
+                    </form>
+                </div>
+                
+            </section>
+            <section class="sort">
+                <div class="div"></div>
+                <button class="sortby"><i class="fa-solid fa-clock"></i> Sort By Time</button>
+            </section>
+        </main>
+    </div>
 </body>
 <script src="./app.js"></script>
 </html>
